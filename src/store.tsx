@@ -30,7 +30,7 @@ const setQty=(id:string,q:number)=>{const p=products.find(x=>x.id===id);const m=
 const removeItem=(id:string)=>setCart(cart.filter(c=>c.id!==id))
 const placeOrder=(info:{name:string;phone:string;address:string;note:string}):Order|string=>{
  if(!cart.length)return 'Giỏ hàng trống'
- const items=[];for(const c of cart){const p=products.find(x=>x.id===c.id)
+const items: Order['items'] = [];for(const c of cart){const p=products.find(x=>x.id===c.id)
   if(!p||p.stock<c.qty)return `"${p?.name||'Sản phẩm'}" không đủ tồn kho`
   items.push({id:p.id,name:p.name,price:p.price,qty:c.qty})}
  const o:Order={id:'MX'+Date.now().toString(36).toUpperCase()+Math.random().toString(36).slice(2,5).toUpperCase(),items,...info,payment:'COD',
