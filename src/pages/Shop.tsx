@@ -20,7 +20,7 @@ export function Home(){
  <div><h1 className="text-3xl font-extrabold text-mx md:text-5xl">MIXUE – Mát lạnh mỗi ngày</h1>
  <p className="mt-4 text-sub">Thế giới kem tươi và đồ uống thơm ngon đang chờ bạn khám phá</p>
  <button className="btn mt-6 px-6 py-3" onClick={()=>document.getElementById('menu')?.scrollIntoView({behavior:'smooth'})}>Đặt hàng ngay</button></div>
- <img src="https://ibb.co/1GddfGB5" alt="Banner MIXUE" className="w-full object-contain"/></div></section>
+ <img src="https://cdn.upanhlaylink.com/i/VzvJKq3i.jpg" alt="Banner MIXUE" className="w-full object-contain"/></div></section>
  <section id="menu" className="bg-soft py-8"><div className="mx-auto max-w-6xl px-4">
  <div className="mb-6 flex flex-wrap gap-2">{chips.map(([k,t])=><button key={k} onClick={()=>setCat(k)} className={`rounded-full border px-4 py-1.5 text-sm ${cat===k?'border-mx bg-mx text-white':'bg-white hover:border-mx'}`}>{t}</button>)}</div>
  {q&&<p className="mb-3 text-sm text-sub">Kết quả cho “{sp.get('q')}”</p>}

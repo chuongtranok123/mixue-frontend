@@ -11,7 +11,7 @@ function Header(){
  const count=cart.reduce((s:number,c:any)=>s+c.qty,0)
  const links=[['/','Trang chủ'],['/?cat=all','Thực đơn'],['/?cat=Kem','Kem'],['/?cat=__drinks','Đồ uống']]
  return <header className="sticky top-0 z-50 bg-white shadow-sm"><div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-2">
- <Link to="/"><img src="https://ibb.co/0jpDnZg1" alt="MIXUE" className="h-11 w-11 rounded-full"/></Link>
+ <Link to="/"><img src="https://cdn.upanhlaylink.com/i/Yjvgn9j8.jpg" alt="MIXUE" className="h-11 w-11 rounded-full"/></Link>
  <nav className="hidden gap-5 text-sm font-medium md:flex">{links.map(([t,n])=><NavLink key={n} to={t} className="hover:text-mx">{n}</NavLink>)}</nav>
  <form className="relative ml-auto hidden max-w-xs flex-1 sm:block" onSubmit={e=>{e.preventDefault();nav('/?q='+encodeURIComponent(q))}}>
  <Search size={16} className="absolute left-3 top-2.5 text-sub"/><input className="inp pl-9" placeholder="Tìm sản phẩm..." value={q} onChange={e=>setQ(e.target.value)}/></form>
