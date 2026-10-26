@@ -20,7 +20,7 @@ export function Home(){
  <div><h1 className="text-3xl font-extrabold text-mx md:text-5xl">MIXUE – Mát lạnh mỗi ngày</h1>
  <p className="mt-4 text-sub">Thế giới kem tươi và đồ uống thơm ngon đang chờ bạn khám phá</p>
  <button className="btn mt-6 px-6 py-3" onClick={()=>document.getElementById('menu')?.scrollIntoView({behavior:'smooth'})}>Đặt hàng ngay</button></div>
- <img src="/images/mixue-banner.jpg" alt="Banner MIXUE" className="w-full object-contain"/></div></section>
+ <img src="https://claude.ai/api/9e82ff59-d772-44ab-9f37-d404f1632ec4/files/de51534f-cfbf-4ecb-bf0d-1666727f901f/preview" alt="Banner MIXUE" className="w-full object-contain"/></div></section>
  <section id="menu" className="bg-soft py-8"><div className="mx-auto max-w-6xl px-4">
  <div className="mb-6 flex flex-wrap gap-2">{chips.map(([k,t])=><button key={k} onClick={()=>setCat(k)} className={`rounded-full border px-4 py-1.5 text-sm ${cat===k?'border-mx bg-mx text-white':'bg-white hover:border-mx'}`}>{t}</button>)}</div>
  {q&&<p className="mb-3 text-sm text-sub">Kết quả cho “{sp.get('q')}”</p>}
