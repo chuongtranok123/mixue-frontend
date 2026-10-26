@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-white text-[#222] antialiased}
+@layer components{
+.btn{@apply inline-flex items-center justify-center gap-1 rounded-full bg-mx px-4 py-2 text-sm font-semibold text-white transition hover:bg-mxd disabled:cursor-not-allowed disabled:bg-gray-300}
+.btn-o{@apply inline-flex items-center justify-center gap-1 rounded-full border border-mx px-4 py-2 text-sm font-semibold text-mx transition hover:bg-mx hover:text-white}
+.inp{@apply w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none focus:border-mx}
+.card{@apply rounded-2xl bg-white shadow-md transition hover:-translate-y-1 hover:shadow-lg}}
